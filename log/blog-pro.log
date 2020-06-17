@@ -1,0 +1,5 @@
+2020-06-17 22:37:18.056  INFO 7884 --- [restartedMain] com.star.StarApplication                 : Starting StarApplication on hp-PC with PID 7884 (F:\Users\imoc\myblog\target\classes started by Administrator in F:\Users\imoc\myblog)
+2020-06-17 22:37:18.057  INFO 7884 --- [restartedMain] com.star.StarApplication                 : The following profiles are active: pro
+2020-06-17 22:37:18.632  WARN 7884 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.star]' package. Please check your configuration.
+2020-06-17 22:37:19.215  WARN 7884 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-17 22:37:19.375  INFO 7884 --- [restartedMain] com.star.StarApplication                 : Started StarApplication in 1.676 seconds (JVM running for 2.285)
