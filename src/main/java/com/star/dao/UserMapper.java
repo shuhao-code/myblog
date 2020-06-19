@@ -11,7 +11,9 @@ import org.springframework.stereotype.Repository;
  */
 @Mapper
 @Repository
-public interface UserDao {
+public interface UserMapper {
 
     User findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    int registerUser(User user);
 }

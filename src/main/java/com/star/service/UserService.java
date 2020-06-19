@@ -9,4 +9,6 @@ import com.star.entity.User;
 public interface UserService {
 
     User checkUser(String username, String password);
+
+    int registerUser(User user);
 }

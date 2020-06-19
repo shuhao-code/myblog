@@ -1,6 +1,6 @@
 package com.star.service.Impl;
 
-import com.star.dao.UserDao;
+import com.star.dao.UserMapper;
 import com.star.entity.User;
 import com.star.service.UserService;
 import com.star.util.MD5Utils;
@@ -15,11 +15,16 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDao userDao;
+    private UserMapper userMapper;
 
     @Override
     public User checkUser(String username, String password) {
-        User user = userDao.findByUsernameAndPassword(username, MD5Utils.code(password));
+        User user = userMapper.findByUsernameAndPassword(username, MD5Utils.code(password));
         return user;
+    }
+
+    @Override
+    public int registerUser(User user) {
+        return userMapper.registerUser(user);
     }
 }

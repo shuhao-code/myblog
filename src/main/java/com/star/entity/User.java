@@ -16,7 +16,11 @@ public class User {
     private String username;
     private String password;
     private String email;
+
+    //头像
     private String avatar;
+
+    //类型  是否为管理员还是普通用户
     private Integer type;
     private Date createTime;
     private Date updateTime;
